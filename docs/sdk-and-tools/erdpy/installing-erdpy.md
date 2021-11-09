@@ -10,13 +10,20 @@ How to install erdpy
 ## **Prerequisites**
 
 Before installing **erdpy**, please make sure you have a working **Python 3** environment:
-
 - **3.8** or later on Linux and MacOS
+
+For MacOs users, please make sure you have [Homebrew](https://brew.sh/) installed.
 
 Smart contracts written in C require the ncurses library routines for compiling. Install them using the following:
 
+On Unix systems.
 ```
 sudo apt install libncurses5
+```
+
+For MacOS using Homebrew.
+```
+brew install ncurses
 ```
 
 ## **Install using erdpy-up (recommended)**
@@ -25,7 +32,7 @@ In order to install **erdpy** using the `erdpy-up` installation script, run the 
 
 ```
 wget -O erdpy-up.py https://raw.githubusercontent.com/ElrondNetwork/elrond-sdk-erdpy/master/erdpy-up.py
-python3.8 erdpy-up.py
+python3 erdpy-up.py
 ```
 
 This will create a light Python virtual environment (based on `venv`) in `~/elrondsdk/erdpy-venv `and also include `~/elrondsdk`in your **`$PATH`** variable (by editing the appropriate `.profile` file).
